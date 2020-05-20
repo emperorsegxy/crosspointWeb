@@ -2,6 +2,21 @@
     --text-back: #6C63FF;
 }
 
+@font-face {
+    font-family: Montserrat;
+    src: url('../fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url('../fonts/Montserrat-Bold.ttf');
+    font-weight: bold;
+}
+
+body {
+    font-family: Montserrat;
+}
+
 .text-box {
     background-color: var(--text-back);
     height: 120px;
@@ -36,33 +51,33 @@
 }
 
 .card-box img {
-    height: 169px;
+    height: 120px;
     transform: translateY(70%);
     z-index: 5;
 }
 
-.card {
+.my-card {
     /* border-radius: 8px; */
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 5px 25px #DEDEDE;
-    border: 0.5px solid #6C63FF;
+    border: 0.5px solid var(--text-back);
     border-radius: 10px;
 }
 
-.card span {
-    color: #6C63FF;
+.my-card span {
+    color: var(--text-back);
     text-align: center;
 }
 
 .newsletter h5 {
-    color: #6C63FF;
+    color: var(--text-back);
     font-weight: bold;
 }
 
 .newsletter p {
-    color: #6C63FF;
+    color: var(--text-back);
 }
 
 .newsletter-email {
@@ -75,9 +90,36 @@
 }
 
 .newsletter-form button {
-    background: #6C63FF 0% 0% no-repeat padding-box !important;
+    background: var(--text-back) 0% 0% no-repeat padding-box !important;
     border-radius: 6px;
     color: #FFF;
     padding: 1rem 2rem !important;
     /* max-height: 49px; */
+}
+
+.link-back {
+    height: 4px;
+    width: 100%;
+    background-color: var(--text-back);
+    transform: translateY(-18px);
+    z-index: 3;
+}
+
+.links {
+    z-index: 5;
+}
+
+.links a {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 0.5px solid #6C63FF;
+    border-radius: 4px;
+    z-index: 1;
+    width: 96px;
+}
+
+@media(max-width: 767px) {
+    #hide {
+        display: none !important;
+    }
 }
