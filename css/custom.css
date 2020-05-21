@@ -13,8 +13,29 @@
     font-weight: bold;
 }
 
-body {
+@font-face {
     font-family: Montserrat;
+    src: url('../fonts/Montserrat-SemiBold.ttf');
+    font-weight: 500;
+}
+
+body {
+    font-family: Montserrat, sans-serif !important;
+}
+
+p {
+    margin: 0 !important;
+}
+
+.corner-style {
+    background-color: #9E82FF;
+    height: 150px;
+    width: 150px;
+    top: -70px;
+    right: -70px;
+    position: absolute;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
 }
 
 .text-box {
@@ -69,6 +90,7 @@ body {
 .my-card span {
     color: var(--text-back);
     text-align: center;
+    font-weight: 500;
 }
 
 .newsletter h5 {
@@ -86,15 +108,13 @@ body {
     box-shadow: 0px 3px 6px #DEDEDE;
     border: 0.5px solid #3A14BF !important;
     border-radius: 4px !important;
-    padding: 1.5rem 2.5rem !important;
+    text-indent: 20px;
 }
 
 .newsletter-form button {
     background: var(--text-back) 0% 0% no-repeat padding-box !important;
     border-radius: 6px;
     color: #FFF;
-    padding: 1rem 2rem !important;
-    /* max-height: 49px; */
 }
 
 .link-back {
@@ -115,11 +135,41 @@ body {
     border: 0.5px solid #6C63FF;
     border-radius: 4px;
     z-index: 1;
-    width: 96px;
+    width: 98px;
+    color: var(--text-back);
+    text-align: center;
+    padding: 5px 7px;
 }
 
 @media(max-width: 767px) {
     #hide {
         display: none !important;
+    }
+
+    .col-md-6.order-2 {
+        margin-top: 20px;
+    }
+
+    .newsletter-text {
+        padding: 5px 20px;
+    }
+
+    .corner-style {
+        height: 100px;
+        width: 100px;
+        top: -50px;
+        right: -50px;
+    }
+
+    .newsletter-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width: 1250px) {
+    #links {
+        width: 90% !important;
     }
 }

@@ -12,7 +12,7 @@
 
 <body>
     <div class="container-fluid overall p-0 overflow-hidden">
-        <nav class="navbar">
+        <nav class="navbar d-flex justify-content-between">
             <a href="#" class="navbar">CROSSPOINT</a>
             <div class="corner-style"></div>
         </nav>
@@ -64,23 +64,27 @@
                 </div>
             </div>
         </div>
-        <div class="newlestter-box row mt-5">
-            <div class="offset-md-6 col-md-6 newsletter">
-                <h5>Be part of our community</h5>
-                <p>Or sign up to our newsletter to get up to date information on what we’re up to! (email)</p>
+        <div class="newlestter-box row my-md-2 my-4">
+            <div
+                class="offset-md-6 col-md-6 mb-3 p-2 newsletter">
+                <div class="newsletter-text">
+                    <h5>Be part of our community</h5>
+                    <p>Or sign up to our newsletter to get up to date information on what we’re up to! (email)</p>
+                </div>
             </div>
             <div class="col-md-6 pr-0 justify-content-center order-2 order-md-1 align-items-center">
-                <div class="links w-50 ml-lg-5 ml-3 d-flex justify-content-around">
-                    <a href="#" class="btn">Instagram</a>
-                    <a href="#" class="btn">Facebook</a>
-                    <a href="#" class="btn">Twitter</a>
+                <div id="links" class="links w-50 ml-lg-5 ml-3 d-flex justify-content-around">
+                    <a href="#" class="link-btn">Instagram</a>
+                    <a href="#" class="link-btn">Facebook</a>
+                    <a href="https://twitter.com/hellocrosspoint?s=09" target="_blank" class="link-btn">Twitter</a>
                 </div>
                 <div class="link-back"></div>
             </div>
-            <div class="col-md-6 pl-0 justify-content-center align-items-center order-md-2 order-1">
-                <form class="newsletter-form">
-                    <input class="form-control newsletter-email d-inline-block" type="email" placeholder="Enter Your Email">
-                    <button class="btn btn-md">Join Us</button>
+            <div class="col-md-6 pl-0 d-flex justify-content-start order-md-2 order-1">
+                <form class="newsletter-form w-100">
+                    <input class="newsletter-email h-100 d-inline-block" type="email"
+                        placeholder="Enter Your Email">
+                    <button class="my-btn h-100">Join Us</button>
                 </form>
             </div>
         </div>
